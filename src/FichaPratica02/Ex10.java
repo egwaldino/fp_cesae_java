@@ -12,10 +12,10 @@ public class Ex10 {
         System.out.print("Introduza um número: ");
         num1 = input.nextDouble();
 
-        System.out.print("Introduza um número: ");
+        System.out.print("Introduza outro número: ");
         num2 = input.nextDouble();
 
-        System.out.print("Introduza a operação: ");
+        System.out.print("Introduza a operação ( + - * / ): ");
         operacao = input.next();
 
         switch (operacao) {
@@ -38,6 +38,9 @@ public class Ex10 {
                 resultado = num1 / num2;
                 System.out.println("A divisão dos numeros: " + num1 + " + " + num2 + " é: " + resultado);
                 break;
+
+            default:
+                System.out.println("Operação Inválida: " + operacao);
         }
     }
 }

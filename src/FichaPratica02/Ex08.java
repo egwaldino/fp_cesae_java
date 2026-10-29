@@ -19,12 +19,14 @@ public class Ex08 {
 
         mediaPonderada = (nota1 * 0.25 + nota2 * 0.35 + nota3 * 0.4);
 
-        if (mediaPonderada > 9.5 && mediaPonderada <= 20) {
-            System.out.println("Com a media de: " + mediaPonderada + "\nEstá aprovado");
-        } else if (mediaPonderada <= 9.5 && mediaPonderada >= 0) {
-            System.out.println("Com a media de: " + mediaPonderada + "\nEstá reprovado");
+        if (nota1 >= 0 && nota1 <= 20 && nota2 >= 0 && nota2 <= 20 && nota3 >= 0 && nota3 <= 20) {
+            if (mediaPonderada >= 9.5) {
+                System.out.println("Com a media de: " + mediaPonderada + "\nEstá aprovado");
+            } else{
+                System.out.println("Com a media de: " + mediaPonderada + "\nEstá reprovado");
+            }
         } else {
-            System.out.println("Introduza um número de (0-20 valores).");
+            System.out.println("Números inseridos inválidos. Introduza um número de (0-20 valores).");
         }
     }
 }

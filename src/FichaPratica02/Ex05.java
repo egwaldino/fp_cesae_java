@@ -20,7 +20,6 @@ public class Ex05 {
         } else if (num1 < num2) {
             System.out.print(num1 + " " + num2);
         } else {
-            System.out.print(num2);
             System.out.print(num2 + " " + num1);
         }
     }
