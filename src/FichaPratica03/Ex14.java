@@ -6,17 +6,25 @@ public class Ex14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int limite, crescente = 0, numero, contador = 1;
+        int limite, numero = 1, numerosInseridos, var, numerosAnteriores;
+
 
         System.out.print("Quantos números deseja inserir: ");
         limite = input.nextInt();
 
-        while (contador <= limite) {
+        var = limite;
+
+        System.out.print("Introduza um número: ");
+        numerosAnteriores = input.nextInt();
+
+        while (limite > numero) {
             System.out.print("Introduza um número: ");
-            numero = input.nextInt();
-            contador++;
+            numerosInseridos = input.nextInt();
+            numero++;
 
+            if(numerosAnteriores < numerosInseridos) {
+
+            }
         }
-
     }
 }

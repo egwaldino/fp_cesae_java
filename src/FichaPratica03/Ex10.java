@@ -15,6 +15,5 @@ public class Ex10 {
                 System.out.println(iniciador);
                 iniciador = iniciador + 2;
             }
-
         }
 }
