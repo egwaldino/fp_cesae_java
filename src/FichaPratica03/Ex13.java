@@ -19,7 +19,7 @@ public class Ex13 {
             if (inicio % 5 == 0) {
                 System.out.println(inicio);
             }
-            inicio = inicio + 1;
+            inicio = inicio + 1; // inicio += 1
         }
     }
 }

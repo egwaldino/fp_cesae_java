@@ -17,11 +17,23 @@ public class Ex12 {
                 interv_00_25++;
             }
 
+            if (numero >= 26 && numero <= 50) {
+                interv_26_50++;
+            }
+
+            if (numero >= 51 && numero <= 75) {
+                interv_51_75++;
+            }
+
+            if (numero >= 76 && numero <= 100) {
+                interv_76_100++;
+            }
+
         }
 
-            System.out.print("[00,25]: " + interv_00_25);
-            System.out.print("[26,50]: " + interv_26_50);
-            System.out.print("[51,75]: " + interv_51_75);
-            System.out.print("[76,100]: " + interv_76_100);
+            System.out.println("[00,25]: " + interv_00_25);
+            System.out.println("[26,50]: " + interv_26_50);
+            System.out.println("[51,75]: " + interv_51_75);
+            System.out.println("[76,100]: " + interv_76_100);
     }
 }

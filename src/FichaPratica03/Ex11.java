@@ -11,12 +11,12 @@ public class Ex11 {
         System.out.print("Introduza um limite: ");
         limite = input.nextInt();
 
-        System.out.print("Introduza um número: ");
+        System.out.print("Introduza um salto: ");
         salto = input.nextInt();
 
         while (iniciador <= limite) {
             System.out.println(iniciador);
-            iniciador = iniciador + salto;
+            iniciador += salto; // iniciador = iniciador + salto;
         }
     }
 }
