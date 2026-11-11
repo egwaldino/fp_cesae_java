@@ -18,5 +18,5 @@ public class Ex02 {
             soma += comissoes[i];
         }
         System.out.println("A soma total anual: " + soma);
-    }
+   }
 }
