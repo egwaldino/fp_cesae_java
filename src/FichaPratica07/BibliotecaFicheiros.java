@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class BibliotecaFicheiros {
-    public static void imprimirFicheiro(String caminho) throws FileNotFoundException {
+    public static void imprimirFicheiros(String caminho) throws FileNotFoundException {
 
         File ficheiro = new File(caminho);
         Scanner sc = new Scanner(ficheiro);
@@ -26,16 +26,22 @@ public class BibliotecaFicheiros {
         System.out.println("Qual é o conteudo do ficheiro?");
         String conteudo = input.nextLine();
 
-        printWriter.println(caminho);
         printWriter.println(conteudo);
 
         printWriter.close();
     }
 
-    public static void criarFicheiros(String caminho) throws FileNotFoundException {
-
-        File ficheiro = new File(caminho);
+    public static void criarFicheiros(String caminho, String destino) throws FileNotFoundException {
+        File ficheiro = new File(destino);
         PrintWriter printWriter = new PrintWriter(ficheiro);
+
+        File origem = new File(caminho);
+        Scanner sc = new Scanner(origem);
+        while(sc.hasNextLine()) {
+            String linha = sc.nextLine();
+            printWriter.println(linha);
+        }
+
 
         printWriter.close();
     }
